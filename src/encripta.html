@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div id="saludo">
+        <h1>Genial, empezemos a escribir tu cripto notes</h1>
+      </div>
+    <h3>Pasos</h3>
+    <p>
+      1-Ingresa la opcion que deseas realizar
+      2- Escribe el mensaje que deseas mandar en secreto.
+      3- Ingresa el numero de saltos para codificar tu mensaja. ejemplo= 4
+      4- Haz click en el boton "encriptar"
+      5-Listo tu mensaje debe aparecer abajo.
+    </p>
+<form id="mensaje">
+  <p>
+    <laber for= "userMensaje1">Escribe aqui tu mensaje</laber><br/>
+    <textarea name="userMensaje1" rows="10" cols="50">.....</textarea>
+    <button type= "submit" id ="submit" onclick="encriptar">Encriptar</button>
+  </p>
+</form>
+
+<form id= "mensajelisto">
+  <label for= "mensajeEncriptado">LIsto ya tenemos tu criptoNotes</label>
+    <textarea name="mensajeEncriptado" rows="10" cols="50"></textarea>
+</form> 
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
