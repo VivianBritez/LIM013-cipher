@@ -1,24 +1,47 @@
-alert("hola mundo");
-import mensaje from './index.js';
-const cipher = (userMessage, n) => {
-  let result= "", codigo;
-  for(let i= 0; i < userMessage.length; i++){
-    //mayuscula 65 al 91
-    if(userMessage.charCodeAt(i)>= 65 && userMessage.charCodeAt(i)<=90){
-      codigo= (((userMessage.charCodeAt(i)-65)+n)%26)+65;  
+export function cifrar(texto, desplazamiento){
+  let result= "", mensaje2;
+  desplazamiento= (desplazamiento %26 + 26)%26;
+  for(let i= 0; i < texto.length; i++){
+    //mayuscula 65 al 90
+    if(texto.charCodeAt(i)>= 65 && texto.charCodeAt(i)<= 90){
+      mensaje2= (((texto.charCodeAt(i)-65)+desplazamiento)%26)+65;  
     }
     // minuscula 97-202
-    else if( userMessage.charCodeAt(i)>=97 && userMessage.charCodeAt(i)<=122){
-      codigo= (((userMessage.charCodeAt(i)-97)+n)%26)+97;
+    else if( texto.charCodeAt(i)>=97 && texto.charCodeAt(i)<=202){
+      mensaje2= (((texto.charCodeAt(i)-97)+desplazamiento)%26)+97;
+    }
+    else if( texto.charCodeAt(i)>=48 && texto.charCodeAt(i)<=57){
+      mensaje2= (((texto.charCodeAt(i)-48)+desplazamiento)%26)+48;
     }
     // 32 es espacio 
-    else if(userMessage.charCodeAt(i)===32){
-      code=32;
+    else if(texto.charCodeAt(i)===32){
+      mensaje2=32;
     }
-    result+= userMessage.fromCharCode(codigo);
+    result+= String.fromCharCode(mensaje2);
   }
   return result;
-  // ...
-};
-
-export default cipher;
+}
+  export function descifrar(texto, desplazamiento){
+   let result= "", mensaje2;
+  desplazamiento= (desplazamiento %26 + 26)%26;
+  for(let i= 0; i < texto.length; i++){
+    //mayuscula 65 al 90
+    if(texto.charCodeAt(i)>= 65 && texto.charCodeAt(i)<= 90){
+      mensaje2= (((texto.charCodeAt(i)-65)-desplazamiento)%26)+65;  
+    }
+    // minuscula 97-202
+    else if( texto.charCodeAt(i)>=97 && texto.charCodeAt(i)<=202){
+      mensaje2= (((texto.charCodeAt(i)-97)-desplazamiento)%26)+97;
+    }
+    else if( texto.charCodeAt(i)>=48 && texto.charCodeAt(i)<=57){
+      mensaje2= (((texto.charCodeAt(i)-48)-desplazamiento)%26)+48;
+    }
+    // 32 es espacio 
+    else if(texto.charCodeAt(i)===32){
+      mensaje2=32;
+    }
+    result+= String.fromCharCode(mensaje2);
+  }
+  return result;
+}
+  

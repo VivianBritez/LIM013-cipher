@@ -1,20 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    <div id="root">
-      <h1>Bienvenido a criptoNotes</h1>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="pagencripta">
+  <h1 class="titulos">CriptoNotes</h1>
+  <div id="inicio">
+    <h2 class="titulos">Envia tus mensajes secretos de manera segura</h2>
+  </div>
+  <div id="instrucciones">
+    <img src="imagenes/incognito2.jpg" width="350" height="200">
+    <h3 class="titulos">Encriptación</h3>
+    <li> Se toma una parte de los datos y se traduce a una nueva forma</li>
+    <li>Solo las personas con acceso a la clave puedan leerlo.</li>
+    <li>Listo empecemos con tu CriptoNotes</li></br>
+  </div>
+  <div id="boton_empezar">
+    <button id="empezar" class="bloques  btn">Empezar</button>
+  </div>
+  <!-- <button id="desencriptar"class="bloques" >Desencriptar</button>-->
+  <div id="content" class="bloques">
+  
+
+    <h2 class="titulos">Genial, empecemos con tu CriptoNotes</h2>
+    <h3>PASOS</h3>
+    <p> En el campo de la izquierda ingresa el mensaje que deseas cifrar o descifrar</p>
+    <p>Ingresa tu numero de desplazamiento (Esto es clave para saber como vas a descifrar tu mensaje)</p>
+    <p>Selecciona la opcion que deseas</p>
+    <p>Genial tu mensaje aparecera en el siguente campo</p>
+    <p>Si deseas seguir escribiendo aprieta el boton Clear y empieza denuevo</p>
+    <img src="imagenes/anonimo.jpg" width="300" height="150"></br>
+
+    <textarea name="textarea" rows="3" cols="20" id="mensaje" class="contenido"></textarea>
+    <textarea name="textarea" rows="3" cols="20" id="mensaje2" class="contenido"></textarea></br>
+    </br>
+
+    <h3 class="botondesplazamiento ">DESPLAZAMIENTO: </h3>
+    <div class="botondesplazamiento">
+      <p><input type="number" id="desplazamiento" size="5" /></p>
     </div>
-   
-  </head>
-  <body>
-    <h2>Encripta tus mensajes y manten tus conversaciones secretas</h2>
-    <h3>Elige una opcion</h3>
-  <a href = "encripta.html">ir a encripta</a>
+
+    <p><button type="button" id="cifrar" class="botones">CIFRAR</button></p>
+
+
+    <p><button type="button" id="descifrar" class="botones">DESCIFRAR</button></p>
+
+    </br>
+    <h3 id="texto_descifrar" class="bloques">Mensaje Descifrado</h3>
+
+    <p><button type="button" id="borrar" class="btn">CLEAR</button></p>
     
     <script src="index.js" type="module"></script>
-    
+  </div>
   </body>
 </html>
