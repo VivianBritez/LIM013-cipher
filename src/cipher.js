@@ -1,6 +1,7 @@
-export function cifrar(texto, desplazamiento){
+ const cipher={
+ encode: (texto, desplazamiento)=>{
   let result= "", mensaje2;
-  desplazamiento= (desplazamiento %26 + 26)%26;
+  desplazamiento=(desplazamiento %26 + 26)%26;
   for(let i= 0; i < texto.length; i++){
     //mayuscula 65 al 90
     if(texto.charCodeAt(i)>= 65 && texto.charCodeAt(i)<= 90){
@@ -10,9 +11,11 @@ export function cifrar(texto, desplazamiento){
     else if( texto.charCodeAt(i)>=97 && texto.charCodeAt(i)<=202){
       mensaje2= (((texto.charCodeAt(i)-97)+desplazamiento)%26)+97;
     }
+    //numeros
     else if( texto.charCodeAt(i)>=48 && texto.charCodeAt(i)<=57){
       mensaje2= (((texto.charCodeAt(i)-48)+desplazamiento)%26)+48;
     }
+
     // 32 es espacio 
     else if(texto.charCodeAt(i)===32){
       mensaje2=32;
@@ -20,8 +23,8 @@ export function cifrar(texto, desplazamiento){
     result+= String.fromCharCode(mensaje2);
   }
   return result;
-}
-  export function descifrar(texto, desplazamiento){
+ },
+  decode: (texto, desplazamiento)=>{
    let result= "", mensaje2;
   desplazamiento= (desplazamiento %26 + 26)%26;
   for(let i= 0; i < texto.length; i++){
@@ -43,5 +46,6 @@ export function cifrar(texto, desplazamiento){
     result+= String.fromCharCode(mensaje2);
   }
   return result;
-}
-  
+  }
+};
+export default cipher;

@@ -3,10 +3,8 @@
 //
 // [Português]
 // Importamos o objeto `cipher`, que contém os métodos `encode` e `decode`
-
-import cipher from '../src/cipher';
-
-describe('cipher', () => {
+import cipher from "./cipher.js";
+describe('encode', () => {
 
   it('should be an object', () => {
     expect(typeof cipher).toBe('object');

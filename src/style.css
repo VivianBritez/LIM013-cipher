@@ -6,6 +6,12 @@
     color: rgb(173, 173, 173);
     
 }
+#CriptoNotes{
+    font-family: 'Courier New', Courier, monospace;
+    color:#20ff02;
+    font-size: 30px;
+    font-weight: 30px;
+}
 
 .contenido{
     float: left;
@@ -48,6 +54,8 @@
 .titulos{
     font-family: 'Courier New', Courier, monospace;
     color:#20ff02;
+    font-size: 20px;
+    font-weight: 1px;
     
 }
 ul{
