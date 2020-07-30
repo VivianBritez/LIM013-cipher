@@ -5,22 +5,22 @@
  </h2>
  <h2>Intalaciones</h2>
  <h5>
-Instalamos node.js, las dependencias y configuramos nuestra cuenta de github.
-Primero creamos una cuenta en github, luego forkeamos la rama principal, descargamos git para el control de versiones.
-Configuramos el git user y git user-email para que este entrelazado a nuestro cuenta de correo de github.
-Descargamos Node.js. 
-  </h5>
+Instalamos node.j y las  las dependencias para el uso del servidor. 
+Cremaos una cuenta en github, luego forkeamos la rama principal, descargamos git para el control de versiones.
+Configuramos el  git, con el git user y git user-email para que este entrelazado a nuestro cuenta de correo de github.
+</h5>
+
  <h1>
  <span style="color:purple">De que trata el proyecto</span><h1>
 <h5>
-Esta pensado en el usuario que busca esconder su conversaciones, debido a la inseguridad en la que esta rodeado. 
+Esta pensado en el usuario que busca esconder sus conversaciones, debido a la inseguridad en la que esta rodeado. 
 El diseño fue pensado desde una versión mas minimalista. Haciendo referencia  al anonimato.
- Por un lado ingresas tu mensaje a cifrar y/o descifrar luego estableces un desplazamiento,das la opcion que deseas realizar y tu mensaje aparecera en el campo siguiente.
+ Por un lado ingresas tu mensaje a cifrar y/o descifrar luego estableces un desplazamiento, das la opcion que deseas realizar y tu mensaje aparecera en el campo siguiente.
 </h5>
 <h1>
  <span style="color:purple">Primer prototipo</span></h1>
  <h5>
- El primer  prototipo esta realizado en papel, busque *feedback* de amigos, familiares y de mi squad, elegi un grupo de referencia para ir  mostrandoles  el avance, e ir recibiendo *feedback * a medida que avanzaba el diseño y las funcionalidades
+ El primer  prototipo esta realizado en papel, busque *feedback* de amigos, familiares y de mi squad, elegi un grupo de referencia para ir  mostrandoles  el avance, e ir recibiendo *feedback * a medida que avanzaba el diseño y las funcionalidades.
   Al principio tenia muchas funciones, luego considere los objetivos relevantes y traze un plan en base a ello.
   </h5>
 
