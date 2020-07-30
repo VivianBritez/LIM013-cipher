@@ -12,20 +12,27 @@ function mostrarEsconder(elementoIdMostrar) {
     }
   }
 }
-document.getElementById("borrar").addEventListener("click", function () {
+document.getElementById("pasos").addEventListener("click" , function(){
+  document.getElementById("pasosCriptoNotes").style.display= "block";
+});
+document.getElementById("borrar").addEventListener("click", function() {
   document.getElementById("mensaje").value = "";
   document.getElementById("mensaje2").value = "";
 
 });
+
+
 document.getElementById("empezar").addEventListener("click", function () {
   mostrarEsconder("content");
   document.getElementById("instrucciones").style.display = "none";
   document.getElementById("inicio").style.display = "none";
+  document.getElementById("pasosCriptoNotes").style.display="none";
+  document.getElementById("pasos").style.display="none";
 });
 window.addEventListener("load", inicio, true);
 function inicio() {
   document.getElementById("mensaje").addEventListener("keyup", function () {
-    mensaje.value = mensaje.value;
+
 
   }, true)
   document.getElementById("cifrar").addEventListener("click", function () {

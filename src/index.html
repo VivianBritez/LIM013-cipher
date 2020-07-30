@@ -3,56 +3,50 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>
+  <title> caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body id="pagencripta">
   <h1 id="CriptoNotes">CriptoNotes</h1>
   <div id="inicio">
-    <h2 class="titulos">-->Comunicacion en presencia del enemigo<--</h2>
+    <h2 class="titulos">Comunicacion en presencia del enemigo</h2>
   </div>
   <div id="instrucciones">
     <img src="imagenes/incognito2.jpg" width="340" height="200">
     <h3 class="titulos">Encriptación</h3>
     <li> Se toma una parte de los datos y se traduce a una nueva forma.</li>
     <li>Solo las personas con acceso a la clave pueden leerlo.</li>
-    <li>    </li><br >
+    <li> Ahora si,empecemos!!  </li><br >
   </div>
   <div id="boton_empezar">
     <button id="empezar" class="bloques  btn">Empezar</button>
+    <button type="button" id="pasos" class= "btn">Instrucciones</button>
   </div>
-  <!-- <button id="desencriptar"class="bloques" >Desencriptar</button>-->
-  <div id="content" class="bloques">
-  
-
-        
-    <h3>PASOS</h3>
+  <div id= "pasosCriptoNotes">
     <p> En el campo de la izquierda ingresa el mensaje que deseas cifrar o descifrar.</p>
     <p>Ingresa tu numero de desplazamiento (Esto es clave para saber como vas a descifrar tu mensaje)</p>
     <p>Selecciona la opcion que deseas.</p>
-    <p>Genial tu mensaje aparecera en el siguente campo.</p>
+    <p>Tu mensaje aparecera en el siguente campo.</p>
     <p>Si deseas seguir escribiendo aprieta el boton Clear y empieza denuevo.</p>
-    <img src="imagenes/anonimo.jpg" width="300" height="150"></br>
-
-    <textarea name="textarea" rows="3" cols="20" id="mensaje" class="contenido"></textarea>
-    <textarea name="textarea" rows="3" cols="20" id="mensaje2" class="contenido"></textarea></br>
-    </br>
+   </div>
+  <!-- <button id="desencriptar"class="bloques" >Desencriptar</button>-->
+  <div id="content" class="bloques">
+    <img src="imagenes/anonimo.jpg" width="290" height="150"> <br>
+  <div>
+    <textarea name="textarea" rows="3" cols="20" id="mensaje" class="contenido" ></textarea>
+    <textarea name="textarea" rows="3" cols="20" id="mensaje2" class="contenido"></textarea><br>
+  </div>
 
     <h3 class="botondesplazamiento ">DESPLAZAMIENTO: </h3>
     <div class="botondesplazamiento">
       <p><input type="number" id="desplazamiento" size="5" /></p>
     </div>
-
-    <p><button type="button" id="cifrar" class="botones">CIFRAR</button></p>
-
-
-    <p><button type="button" id="descifrar" class="botones">DESCIFRAR</button></p>
-
-    </br>
-    <h3 id="texto_descifrar" class="bloques">Mensaje Descifrado</h3>
-
-    <p><button type="button" id="borrar" class="btn">CLEAR</button></p>
+    <button type="button" id="cifrar" class="botones">CIFRAR</button>
+    <button type="button" id="descifrar" class="botones">DESCIFRAR</button><br><br>
+ 
+    <div><button type="button" id="borrar" class="btn">CLEAR</button></div>
+   
     
     <script src="index.js" type="module"></script>
   </div>
