@@ -28,7 +28,7 @@ El diseño fue pensado desde una versión mas minimalista. Haciendo referencia  
 <h4>
 <span style="color:purple">Imagenes del prototipo inicial</span><h4>
 
-![](src/imagenes/1.jpg width=200px)
+![](src/imagenes/1.jpg)
 ![](src/imagenes/2.jpg)
 ![](src/imagenes/3.jpg)
 ![](src/imagenes/4.jpg)
@@ -53,6 +53,9 @@ Tras presentar el proyecto a los usuarios, ellos percibieron algunos detalles in
 <h2>Ultimas Imagenes de la Página</h2>
 ___
 ![](src/imagenes/9.png)
+
 ![](src/imagenes/10.png)
+
 ![](src/imagenes/10.1.png)
+
 ![](src/imagenes/11.png)
