@@ -3,7 +3,7 @@
  <h2>
  <span style="color: grey">Comunicacion en presencia del enemigo</span>
  </h2>
- <h2>Intalaciones</h2>
+ <h2>Instalaciones</h2>
  <h5>
 Instalamos node.j y las  las dependencias para el uso del servidor. 
 Cremaos una cuenta en github, luego forkeamos la rama principal, descargamos git para el control de versiones.
@@ -52,6 +52,7 @@ Tras presentar el proyecto a los usuarios, ellos percibieron algunos detalles in
 
 <h2>Ultimas Imagenes de la Página</h2>
 ___
+
 ![](src/imagenes/9.png)
 
 ![](src/imagenes/10.png)
