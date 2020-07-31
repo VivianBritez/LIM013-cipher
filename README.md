@@ -6,7 +6,7 @@
  <h2>Intalaciones</h2>
  <h5>
 Instalamos node.j y las  las dependencias para el uso del servidor. 
-Cremaos una cuenta en github, luego forkeamos la rama principal, descargamos git para el control de versiones.
+Creamos una cuenta en github, luego forkeamos la rama principal, descargamos git para el control de versiones.
 Configuramos el  git, con el git user y git user-email para que este entrelazado a nuestro cuenta de correo de github.
 </h5>
 
